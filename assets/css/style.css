@@ -684,7 +684,7 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/about-bg.jpeg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -692,7 +692,7 @@ h6 {
   padding: 60px 0 40px 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1192px) {
   #about {
     background-attachment: fixed;
   }
