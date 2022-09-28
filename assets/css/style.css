@@ -1282,11 +1282,13 @@ h6 {
 
 #rodape .copyright {
   text-align: center;
+  color: rgb(0, 0, 0);
   padding-top: 30px;
 }
 
 #rodape .credits {
   text-align: center;
+  
   font-size: 13px;
-  color: #ddd;
+  color: rgb(0, 0, 0);
 }
