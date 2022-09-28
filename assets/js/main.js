@@ -166,9 +166,9 @@
   });
 
   /**
-   * Gallery Slider
+   * galeria Slider
    */
-  new Swiper('.gallery-slider', {
+  new Swiper('.galeria-slider', {
     speed: 400,
     loop: true,
     centeredSlides: true,
@@ -203,14 +203,14 @@
   });
 
   /**
-   * Initiate gallery lightbox 
+   * Initiate galeria lightbox 
    */
-  const galleryLightbox = GLightbox({
-    selector: '.gallery-lightbox'
+  const galeriaLightbox = GLightbox({
+    selector: '.galeria-lightbox'
   });
 
   /**
-   * Buy tickets select the ticket type on click
+   * Buy planos select the ticket type on click
    */
   on('show.bs.modal', '#buy-ticket-modal', function(event) {
     select('#buy-ticket-modal #ticket-type').value = event.relatedTarget.getAttribute('data-ticket-type')

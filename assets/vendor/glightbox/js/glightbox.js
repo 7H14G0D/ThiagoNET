@@ -2539,11 +2539,11 @@
         var index = isNumber(startAt) ? startAt : this.settings.startAt;
 
         if (isNode(element)) {
-          var gallery = element.getAttribute('data-gallery');
+          var galeria = element.getAttribute('data-galeria');
 
-          if (gallery) {
+          if (galeria) {
             this.fullElementsList = this.elements;
-            this.elements = this.getGalleryElements(this.elements, gallery);
+            this.elements = this.getgaleriaElements(this.elements, galeria);
           }
 
           if (isNil(index)) {
@@ -3192,17 +3192,17 @@
           slideInfo.index = i;
           slideInfo.instance = slide;
           slideInfo.slideConfig = elData;
-          slideInfo.gallery = el.getAttribute('data-gallery');
+          slideInfo.galeria = el.getAttribute('data-galeria');
           list.push(slideInfo);
         });
 
         return list;
       }
     }, {
-      key: "getGalleryElements",
-      value: function getGalleryElements(list, gallery) {
+      key: "getgaleriaElements",
+      value: function getgaleriaElements(list, galeria) {
         return list.filter(function (el) {
-          return el.gallery == gallery;
+          return el.galeria == galeria;
         });
       }
     }, {

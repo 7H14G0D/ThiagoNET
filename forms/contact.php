@@ -6,7 +6,7 @@
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
 
-  // Replace contact@example.com with your real receiving email address
+  // Replace contato@example.com with your real receiving email address
   $receiving_email_address = 'contaquerecebeasmensagens@email.com';
 
   /* if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) { */
@@ -17,17 +17,17 @@
     die( 'Enable to load the "PHP Email Form" Library!');
   }
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
+  $contato = new PHP_Email_Form;
+  $contato->ajax = true;
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  $contato->to = $receiving_email_address;
+  $contato->from_name = $_POST['name'];
+  $contato->from_email = $_POST['email'];
+  $contato->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   
-  $contact->smtp = array(
+  $contato->smtp = array(
     'host' => 'smtp.servico.com',
     'username' => 'emaildaconta',
     'password' => 'senhadaconta',
@@ -35,9 +35,9 @@
   );
   
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+  $contato->add_message( $_POST['name'], 'From');
+  $contato->add_message( $_POST['email'], 'Email');
+  $contato->add_message( $_POST['message'], 'Message', 10);
 
-  echo $contact->send();
+  echo $contato->send();
 ?>
