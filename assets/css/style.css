@@ -61,7 +61,7 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #fff url("https://loading.io/asset/603998") no-repeat center center;
 }
 
 /*--------------------------------------------------------------
@@ -89,7 +89,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #600094;
   color: #fff;
 }
 
@@ -132,7 +132,7 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
+  color: #9d91a2;
 }
 
 .section-with-bg {
@@ -463,7 +463,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -542,11 +542,11 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 #principal h1 span {
-  color: #600094;
+  color: #6f009c;
   /*color: #f82249;*/
 }
 
