@@ -160,6 +160,7 @@ h6 {
 
 #header #logo h1 {
   font-size: 36px;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -198,7 +199,7 @@ h6 {
   from {filter:brightness(180%)}
 }
 /*--------------------------------------------------------------
-# Buy planos
+# Planos
 --------------------------------------------------------------*/
 .buy-planos {
   color: #fff;
@@ -232,10 +233,10 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Menu de Navegação
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navegação 
 */
 .navbar {
   padding: 0;
@@ -374,7 +375,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navegação 
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -490,7 +491,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# principal Section
+# Principal Section
 --------------------------------------------------------------*/
 #principal {
   width: 100%;
@@ -542,11 +543,14 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
+  text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   /*text-transform: uppercase;*/
 }
 
 #principal h1 span {
+  font-size: 60px;
   color: #6f009c;
+  text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   /*color: #f82249;*/
 }
 
@@ -560,6 +564,7 @@ h6 {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
+  text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 991px) {
@@ -644,6 +649,7 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -689,15 +695,18 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# sobre Section
+# Sobre Section
 --------------------------------------------------------------*/
 #sobre {
-  background: url("../img/sobre-bg.jpeg");
+  width: 100%;
+  height: 100vh;
+  background: url(../img/sobre-bg.jpeg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  align-items: center;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 1192px) {
@@ -719,6 +728,7 @@ h6 {
 #sobre h2 {
   font-size: 36px;
   font-weight: bold;
+  margin-top: 100px;
   margin-bottom: 10px;
   color: #fff;
 }
@@ -727,6 +737,7 @@ h6 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 100px;
   margin-bottom: 10px;
   color: #fff;
 }
@@ -776,6 +787,7 @@ h6 {
   font-size: 36px;
   font-weight: 700;
   color: #fff;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 574px) {
@@ -808,11 +820,15 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# galeria Section
+# Galeria Section
 --------------------------------------------------------------*/
+
 #galeria {
+  width: 100%;
+  height: 100vh;
   padding: 60px;
   overflow: hidden;
+  margin-bottom: 120px;
 }
 
 #galeria .swiper-pagination {
@@ -855,7 +871,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Sponsors Section
+# Parceiros Section
 --------------------------------------------------------------*/
 #parceiros {
   padding: 60px 0;
@@ -888,86 +904,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Planos Section
---------------------------------------------------------------*/
-#buy-planos {
-  padding: 60px 0;
-}
-
-#buy-planos .card {
-  border: none;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
-}
-
-#buy-planos .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
-}
-
-#buy-planos .card hr {
-  margin: 25px 0;
-}
-
-#buy-planos .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-#buy-planos .card .card-price {
-  font-size: 48px;
-  margin: 0;
-}
-
-#buy-planos .card ul li {
-  margin-bottom: 20px;
-}
-
-#buy-planos .card .text-muted {
-  opacity: 0.7;
-}
-
-#buy-planos .card .btn {
-  font-size: 15px;
-  border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: #600094;
-  /*background-color: #f82249;*/
-  border: 0;
-  color: #fff;
-}
-
-#buy-planos .card .btn:hover {
-  background-color: #600094;
-  /*background-color: #e0072f;*/
-}
-
-#buy-planos #buy-ticket-modal input,
-#buy-planos #buy-ticket-modal select {
-  border-radius: 0;
-}
-
-#buy-planos #buy-ticket-modal .btn {
-  font-size: 15px;
-  border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: #600094;
-  /*background-color: #f82249;*/
-  border: 0;
-  color: #fff;
-}
-
-#buy-planos #buy-ticket-modal .btn:hover {
-  background-color: #600094;
-  /*background-color: #e0072f;*/
-}
-
-/*--------------------------------------------------------------
-# contato Section
+# Contato Section
 --------------------------------------------------------------*/
 #contato {
   padding: 60px 0;
@@ -1129,6 +1066,85 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Planos Section
+--------------------------------------------------------------*/
+#buy-planos {
+  padding: 60px 0;
+}
+
+#buy-planos .card {
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+}
+
+#buy-planos .card:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+}
+
+#buy-planos .card hr {
+  margin: 25px 0;
+}
+
+#buy-planos .card .card-title {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#buy-planos .card .card-price {
+  font-size: 48px;
+  margin: 0;
+}
+
+#buy-planos .card ul li {
+  margin-bottom: 20px;
+}
+
+#buy-planos .card .text-muted {
+  opacity: 0.7;
+}
+
+#buy-planos .card .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #600094;
+  /*background-color: #f82249;*/
+  border: 0;
+  color: #fff;
+}
+
+#buy-planos .card .btn:hover {
+  background-color: #600094;
+  /*background-color: #e0072f;*/
+}
+
+#buy-planos #buy-ticket-modal input,
+#buy-planos #buy-ticket-modal select {
+  border-radius: 0;
+}
+
+#buy-planos #buy-ticket-modal .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #600094;
+  /*background-color: #f82249;*/
+  border: 0;
+  color: #fff;
+}
+
+#buy-planos #buy-ticket-modal .btn:hover {
+  background-color: #600094;
+  /*background-color: #e0072f;*/
 }
 
 /*--------------------------------------------------------------
