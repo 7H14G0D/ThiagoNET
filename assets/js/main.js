@@ -120,12 +120,12 @@
   })
 
   /**
-   * Mobile nav dropdowns activate
+   * Mobile nav downloads activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .download > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
+      this.nextElementSibling.classList.toggle('download-active')
     }
   }, true)
 

@@ -159,18 +159,21 @@ h6 {
 }
 
 #header #logo h1 {
-  font-size: 36px;
+  font-size: 30px;
   text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 #header #logo h1 span {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
   /*color: #f82249;*/
   *color: #600094;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
 }
 
 #header #logo h1 a,
@@ -179,9 +182,13 @@ h6 {
 }
 
 #header #logo img {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 10px;
   max-height: 40px;
+  border-radius: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);;
   /* animação da logo apenas ao abrir pagina 
   para ficar mais tempo a linha abaixo muda para
   animation: logo_animation 3s linear infinite; */
@@ -308,7 +315,7 @@ h6 {
   color: #fff;
 }
 
-.navbar .dropdown ul {
+.navbar .download ul {
   display: block;
   position: absolute;
   left: 12px;
@@ -323,41 +330,41 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar .dropdown ul li {
+.navbar .download ul li {
   min-width: 200px;
 }
 
-.navbar .dropdown ul a {
+.navbar .download ul a {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
   color: #060c22;
 }
 
-.navbar .dropdown ul a i {
+.navbar .download ul a i {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .download ul a:hover,
+.navbar .download ul .active:hover,
+.navbar .download ul li:hover>a {
   color: #600094;
   /*color: #f82249;*/
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .download:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
 
-.navbar .dropdown .dropdown ul {
+.navbar .download .download ul {
   top: 0;
   left: calc(100% - 30px);
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .download .download:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -365,11 +372,11 @@ h6 {
 }
 
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
+  .navbar .download .download ul {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .download .download:hover>ul {
     left: -100%;
   }
 }
@@ -422,9 +429,11 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  float:left;
+  width:100%;
+  height:560px;
 }
 
 .navbar-mobile>ul>li {
@@ -439,9 +448,10 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
+  text-shadow: #040919;
   padding: 10px 20px;
-  font-size: 15px;
-  color: #060c22;
+  font-size: 25px;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
@@ -456,7 +466,7 @@ h6 {
   margin: 15px;
 }
 
-.navbar-mobile .dropdown ul {
+.navbar-mobile .download ul {
   position: static;
   display: none;
   margin: 10px 20px;
@@ -468,25 +478,25 @@ h6 {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-.navbar-mobile .dropdown ul li {
+.navbar-mobile .download ul li {
   min-width: 200px;
 }
 
-.navbar-mobile .dropdown ul a {
+.navbar-mobile .download ul a {
   padding: 10px 20px;
 }
 
-.navbar-mobile .dropdown ul a i {
+.navbar-mobile .download ul a i {
   font-size: 12px;
 }
 
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .download ul a:hover,
+.navbar-mobile .download ul .active:hover,
+.navbar-mobile .download ul li:hover>a {
   color: #600094;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .download>.download-active {
   display: block;
 }
 
@@ -548,7 +558,7 @@ h6 {
 }
 
 #principal h1 span {
-  font-size: 60px;
+  font-size: 56px;
   color: #6f009c;
   text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   /*color: #f82249;*/
