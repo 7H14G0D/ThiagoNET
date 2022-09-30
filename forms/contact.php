@@ -1,29 +1,43 @@
 <?php
+  /**
+  * Requires the "PHP Email Form" library
+  * The "PHP Email Form" library is available only in the pro version of the template
+  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
+  * For more info and help: https://bootstrapmade.com/php-email-form/
+  */
 
-if(isset($_POST['email']) && !empty()){
+  // Replace contato@example.com with your real receiving email address
+  $receiving_email_address = 'contaquerecebeasmensagens@email.com';
 
-$nome = addcslashes($_POST['name']);
-$email = addcslashes($_POST['email']);
-$assunto = addcslashes($_POST['subject']);
-$mensagem = addcslashes($_POST['message']);
+  /* if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) { */
+    if( file_exists($php_email_form = '../assets/vendor/php-email-form/validate.js' )) {
+    include( $php_email_form );
+  } else {
+    /* die( 'Unable to load the "PHP Email Form" Library!'); */
+    die( 'Enable to load the "PHP Email Form" Library!');
+  }
 
-$to = "contato@thiagonet.com";
-$subject = "Site-Contato = ThiagoNET";
-$body = "Nome: ".$nome. " \r\n "
-        "Email: ".$email. " \r\n "
-        "Assunto: ".$assunto. " \r\n "
-        "Mensagem: ".$mensagem. " \r\n ";
-$header = "From: contato@thiagonet.com"."\r\n"
-        ."Reply-To:".$email."\r\n"
-        ."x=Mailer:PHP/".phpversion();
+  $contato = new PHP_Email_Form;
+  $contato->ajax = true;
+  
+  $contato->to = $receiving_email_address;
+  $contato->from_name = $_POST['name'];
+  $contato->from_email = $_POST['email'];
+  $contato->subject = $_POST['subject'];
 
-if(mail($to,$subject,$body,$header)){
+  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+  
+  $contato->smtp = array(
+    'host' => 'smtp.servico.com',
+    'username' => 'emaildaconta',
+    'password' => 'senhadaconta',
+    'port' => '465'
+  );
+  
 
-    echo("Email enviado com sucesso!");
+  $contato->add_message( $_POST['name'], 'From');
+  $contato->add_message( $_POST['email'], 'Email');
+  $contato->add_message( $_POST['message'], 'Message', 10);
 
-}else{
-    echo("Erro! ao enviar email")";"
-}
-
-}
+  echo $contato->send();
 ?>
