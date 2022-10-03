@@ -979,7 +979,7 @@ h6 {
   }
 }
 
-#contato .php-email-form .error-message {
+#contato .email-form .error-message {
   display: none;
   color: #fff;
   background: #600094;
@@ -989,11 +989,11 @@ h6 {
   font-weight: 600;
 }
 
-#contato .php-email-form .error-message br+br {
+#contato .email-form .error-message br+br {
   margin-top: 25px;
 }
 
-#contato .php-email-form .sent-message {
+#contato .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1002,14 +1002,14 @@ h6 {
   font-weight: 600;
 }
 
-#contato .php-email-form .loading {
+#contato .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-#contato .php-email-form .loading:before {
+#contato .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1022,28 +1022,28 @@ h6 {
   animation: animate-loading 1s linear infinite;
 }
 
-#contato .php-email-form input,
-#contato .php-email-form textarea {
+#contato .email-form input,
+#contato .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-#contato .php-email-form input:focus,
-#contato .php-email-form textarea:focus {
+#contato .email-form input:focus,
+#contato .email-form textarea:focus {
   border-color: #600094;
   /*border-color: #f82249;*/
 }
 
-#contato .php-email-form input {
+#contato .email-form input {
   padding: 10px 15px;
 }
 
-#contato .php-email-form textarea {
+#contato .email-form textarea {
   padding: 12px 15px;
 }
 
-#contato .php-email-form button[type=submit] {
+#contato .email-form button[type=submit] {
   background: #600094;
   /*background: #f82249;*/
   border: 0;
@@ -1054,7 +1054,7 @@ h6 {
   cursor: pointer;
 }
 
-#contato .php-email-form button[type=submit]:hover {
+#contato .email-form button[type=submit]:hover {
   background: #600094;
   /*background: #e0072f;*/
 }

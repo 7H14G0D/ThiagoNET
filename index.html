@@ -336,9 +336,11 @@
               </div>
     
             </div>
-    
+
             <div class="form">
-              <form action="https://git.heroku.com/formulariothiagonet.git" method="post" role="form" class="php-email-form">
+              <!-- Email primário que receberá a mensagem -->
+              <form action="https://formsubmit.co/thiagobrunomenezesdacosta@gmail.com" method="post" role="form" class="email-form">
+                
                 <div class="row">
                   <div class="form-group col-md-6">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
@@ -358,7 +360,13 @@
                   <div class="error-message">Algo errado!</div>
                   <div class="sent-message">Sua mensagem foi enviada!</div>
                 </div>
-                <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+                <div class="text-center" target="_blank"><button type="submit">Enviar Mensagem </button></div>
+                <!-- Página de confirmação-->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+                <!-- Mensagem de confirmação-->
+                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!">
+                <!-- Mensagem sem captcha = false , com captcha = true-->
+                <input type="hidden" name="_captcha" value="true">
               </form>
             </div>
     
@@ -567,7 +575,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/email-form/validate.js"></script>
 
   <!-- Localização do Main JavaScript -->
   <script src="assets/js/main.js"></script>
