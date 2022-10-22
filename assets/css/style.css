@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f8234a;*/
   text-decoration: none;
   transition: 0.5s;
@@ -24,7 +24,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f8234a;*/
   outline: none;
   text-decoration: none;
@@ -74,7 +74,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #9202ff;
+  background: #00cccc;
   /*background: #f82249;*/
   width: 40px;
   height: 40px;
@@ -89,7 +89,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #9202ff;
+  background: #00cccc;
   color: #fff;
 }
 
@@ -113,7 +113,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #9202ff;
+  background: #00cccc;
   /*background: #f82249;*/
   bottom: 0;
   left: calc(50% - 25px);
@@ -173,7 +173,7 @@ h6 {
   padding: 0px;
   margin: 0px;
   /*color: #f82249;*/
-  *color: #9202ff;
+  *color: #00cccc;
   text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -263,7 +263,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #9202ff;
+  background-color: #00cccc;
   /*background-color: #f82249;*/
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
@@ -316,7 +316,7 @@ h6 {
 .navbar .download ul a:hover,
 .navbar .download ul .active:hover,
 .navbar .download ul li:hover>a {
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f82249;*/
 }
 
@@ -425,7 +425,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f82249;*/
 }
 
@@ -461,7 +461,7 @@ h6 {
 .navbar-mobile .download ul a:hover,
 .navbar-mobile .download ul .active:hover,
 .navbar-mobile .download ul li:hover>a {
-  color: #9202ff;
+  color: #00cccc;
 }
 
 .navbar-mobile .download>.download-active {
@@ -527,7 +527,7 @@ h6 {
 
 #principal h1 span {
   font-size: 56px;
-  color: #8c00d7;
+  color: #00cccc;
   text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
   /*color: #f82249;*/
 }
@@ -554,7 +554,7 @@ h6 {
 #principal .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#9202ff 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#00cccc 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -600,7 +600,7 @@ h6 {
 }
 
 #principal .play-btn:hover::after {
-  border-left: 15px solid #9202ff;
+  border-left: 15px solid #00cccc;
   /*border-left: 15px solid #f82249;*/
   transform: scale(20);
 }
@@ -638,12 +638,12 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #9202ff;
+  border: 2px solid #00cccc;
   /*border: 2px solid #f82249;*/
 }
 
 #principal .sobre-btn:hover {
-  background: #9202ff;
+  background: #00cccc;
   /*background: #f82249;*/
   color: #fff;
 }
@@ -819,12 +819,12 @@ h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #9202ff;
+  border: 1px solid #00cccc;
   /*border: 1px solid #f82249;*/
 }
 
 #galeria .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #9202ff;
+  background-color: #00cccc;
   /*background-color: #f82249;*/
 }
 
@@ -838,7 +838,7 @@ h6 {
   }
 
   #galeria .swiper-slide-active {
-    border: 5px solid #9202ff;
+    border: 5px solid #00cccc;
     /*border: 5px solid #f82249;*/
     padding: 4px;
     background: #fff;
@@ -897,7 +897,7 @@ h6 {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f82249;*/
 }
 
@@ -920,7 +920,7 @@ h6 {
 }
 
 #contato .contato-info a:hover {
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f82249;*/
 }
 
@@ -949,7 +949,7 @@ h6 {
 #contato .email-form .error-message {
   display: none;
   color: #fff;
-  background: #9202ff;
+  background: #00cccc;
   /*background: #ed3c0d;*/
   text-align: left;
   padding: 15px;
@@ -998,7 +998,7 @@ h6 {
 
 #contato .email-form input:focus,
 #contato .email-form textarea:focus {
-  border-color: #9202ff;
+  border-color: #00cccc;
   /*border-color: #f82249;*/
 }
 
@@ -1011,7 +1011,7 @@ h6 {
 }
 
 #contato .email-form button[type=submit] {
-  background: #9202ff;
+  background: #00cccc;
   /*background: #f82249;*/
   border: 0;
   padding: 10px 40px;
@@ -1022,7 +1022,7 @@ h6 {
 }
 
 #contato .email-form button[type=submit]:hover {
-  background: #9202ff;
+  background: #00cccc;
   /*background: #e0072f;*/
 }
 
@@ -1052,12 +1052,12 @@ h6 {
 .buy-planos {
   color: #fff;
   /*background: #f82249;*/
-  background: #9202ff;
+  background: #00cccc;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
   /*border: 2px solid #f82249;*/
-  border: 2px solid #9202ff;
+  border: 2px solid #00cccc;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -1124,14 +1124,14 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #9202ff;
+  background-color: #00cccc;
   /*background-color: #f82249;*/
   border: 0;
   color: #fff;
 }
 
 #buy-planos .card .btn:hover {
-  background-color: #9202ff;
+  background-color: #00cccc;
   /*background-color: #e0072f;*/
 }
 
@@ -1145,14 +1145,14 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #9202ff;
+  background-color: #00cccc;
   /*background-color: #f82249;*/
   border: 0;
   color: #fff;
 }
 
 #buy-planos #buy-ticket-modal .btn:hover {
-  background-color: #9202ff;
+  background-color: #00cccc;
   /*background-color: #e0072f;*/
 }
 
@@ -1219,7 +1219,7 @@ h6 {
 }
 
 #rodape .rodape-top .social-links a:hover {
-  background: #9202ff;
+  background: #00cccc;
   /*background: #f82249;*/
   color: #fff;
 }
@@ -1231,7 +1231,7 @@ h6 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #9202ff;
+  border-bottom: 2px solid #00cccc;
   /*border-bottom: 2px solid #f82249;*/
 }
 
@@ -1247,7 +1247,7 @@ h6 {
 
 #rodape .rodape-top .rodape-links ul i {
   padding-right: 5px;
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f82249;*/
   font-size: 18px;
 }
@@ -1266,7 +1266,7 @@ h6 {
 }
 
 #rodape .rodape-top .rodape-links ul a:hover {
-  color: #9202ff;
+  color: #00cccc;
   /*color: #f82249;*/
 }
 
@@ -1289,7 +1289,7 @@ h6 {
 }
 
 #rodape .rodape-top .rodape-newsletter input[type=submit] {
-  background: #9202ff;
+  background: #00cccc;
   /*background: #f82249;*/
   border: 0;
   width: 35%;
@@ -1301,7 +1301,7 @@ h6 {
 }
 
 #rodape .rodape-top .rodape-newsletter input[type=submit]:hover {
-  background: #9202ff;
+  background: #00cccc;
   /*background: #e0072f;*/
 }
 
