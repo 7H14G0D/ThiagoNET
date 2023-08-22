@@ -1,7 +1,6 @@
 # ThiagoNET 
 
-![GitHub repo size](https://imgur.com/MxuV6A5)
-
+![preview](https://imgur.com/MxuV6A5)
 
 ## License
 
