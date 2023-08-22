@@ -1,1 +1,0 @@
-page: https://thiagonet.com/
